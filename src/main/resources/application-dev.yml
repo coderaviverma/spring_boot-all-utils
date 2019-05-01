@@ -1,0 +1,5 @@
+spring:
+  messages:This is Profile messages
+
+  server:
+    port:8081
