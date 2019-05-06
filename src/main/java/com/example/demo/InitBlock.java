@@ -16,9 +16,9 @@ public class InitBlock {
 
     public static void main(String[] args) {
 
-        new InitBlock();
-        new InitBlock();
-        System.out.println("Main");
+//        new InitBlock();
+//        new InitBlock();
+//        System.out.println("Main");
 
     }
 
