@@ -13,7 +13,7 @@ public class ExceptionMain {
 //                System.out.println(s+".");
 //            }
 //        }
-
+/*
         try {
             System.exit(0);
             System.out.println("try called");
@@ -25,5 +25,30 @@ public class ExceptionMain {
         } finally {
             System.out.println("Finally called");
         }
+
+        */
+
+        try{
+            System.out.println("Try run");
+
+            getData();
+            System.out.println("Try run end");
+
+        }catch (Exception e){
+            System.out.println("Catch run"+e.getMessage());
+            return;
+        }finally {
+            System.out.println("finally run");
+        }
+
+
+
+    }
+
+
+    public static int getData(){
+        int a=1/0;
+
+        return 1;
     }
 }

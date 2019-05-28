@@ -7,7 +7,7 @@ import javax.annotation.PostConstruct;
 
 
 //@Profile("dev")
-@Configuration
+//@Configuration
 public class DevConfig {
 
 

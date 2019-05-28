@@ -6,3 +6,15 @@ public class A {
         System.out.println("A method");
     }
 }
+
+
+ class D extends A{
+
+
+
+     void callme(){
+
+
+     }
+
+ }
