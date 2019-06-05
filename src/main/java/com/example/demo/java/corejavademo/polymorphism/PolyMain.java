@@ -6,7 +6,18 @@ public class PolyMain {
     public static void main(String[] args) {
 
 
-        A a=new B();
+        B a=new B();
+        a.m1();
+        a.m2();
+        a.m3();
+        a.m4();
+
+        System.out.println("------------------------------------------------------");
+        A b=new B();
+        b.m1();
+        b.m2();
+        b.m3();
+//        b.m4();
 
         //Compile Time Polymorphism
 //        a.m1();

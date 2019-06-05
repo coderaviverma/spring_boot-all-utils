@@ -9,9 +9,16 @@ public class B extends A {
 
 
     //
-    protected void m2(){
+    public void m2(){
 //         this.m2();
 //         super.m2();
         System.out.println("normal method Class B is called");
     }
+
+
+    public void m4(){
+        System.out.println("Normal method m4 of Class B is called");
+
+    }
+
 }
