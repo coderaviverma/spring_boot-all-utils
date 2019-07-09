@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.TreeSet;
 
 public class DemoTest {
-
+        private String  naml;
     public static void main(String[] args) {
+        //        String a1="hello";
 
-//        String a1="hello";
         String a2="hello";
         String a5=new String("hello");
         StringBuilder a3=new StringBuilder("hello");

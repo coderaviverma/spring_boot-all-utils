@@ -16,8 +16,7 @@ public class CreateThread1 implements Runnable {
 
             catch(Exception ex)
             {
-                System.out.println("Exception has" +
-                        " been caught" + ex);
+                System.out.println("Exception has" + " been caught" + ex);
             }
             System.out.println(i);
         }

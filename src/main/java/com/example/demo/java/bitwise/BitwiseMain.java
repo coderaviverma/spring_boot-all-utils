@@ -1,5 +1,7 @@
 package com.example.demo.java.bitwise;
 
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
 public class BitwiseMain {
 
     public static void main(String[] args) {
@@ -22,7 +24,7 @@ public class BitwiseMain {
                 Integer.toBinaryString(0xFFFFFF & b)).replaceAll(" ", "0"));
 
 
-//        printBinaryNumbers(x);
+        printBinaryNumbers(x);
     }
 
 

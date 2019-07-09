@@ -11,48 +11,31 @@ public class ExcutorsMain {
 //        Thread t=new Thread(thread1);
 //        t.start();
 
+//
+//        ThreadExtend t1=new ThreadExtend();
+//        ThreadExtend t2=new ThreadExtend();
+//        ThreadExtend t3=new ThreadExtend();
+//
+//
+//        t1.start();
+//        t2.start();
+//        t3.start();
 
-        ThreadExtend t1=new ThreadExtend();
-        ThreadExtend t2=new ThreadExtend();
-        ThreadExtend t3=new ThreadExtend();
 
+        for (int i = 0; i < 100; i++) {
 
-
-        t1.start();
-
-        // starts second thread after when
-        // first thread t1 has died.
-        try
-        {
-            System.out.println("Current Thread: "
-                    + Thread.currentThread().getName());
-            t1.join();
+            ThreadExtend t=new ThreadExtend();
+            t.start();
+//            try {
+//                t.join();
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
         }
 
-        catch(Exception ex)
-        {
-            System.out.println("Exception has " +
-                    "been caught" + ex);
-        }
 
 
-        // t2 starts
-        t2.start();
 
-        // starts t3 after when thread t2 has died.
-        try
-        {
-            System.out.println("Current Thread: "
-                    + Thread.currentThread().getName());
-            t2.join();
-        }
 
-        catch(Exception ex)
-        {
-            System.out.println("Exception has been" +
-                    " caught" + ex);
-        }
-
-        t3.start();
     }
 }

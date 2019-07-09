@@ -16,7 +16,7 @@ public class EvenOddMain {
         thread.start();
         oddThread.start();
 
-
-
     }
+
+
 }

@@ -2,10 +2,10 @@ package com.example.demo.java.threads.producerconsumerproblem;
 
 public class UsingThreadMain {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
 
 
-        System.exit(1);
+//        System.exit(1);
 
 
         DataThread dataThread=new DataThread();
