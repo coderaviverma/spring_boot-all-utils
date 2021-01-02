@@ -6,5 +6,6 @@ public class G {
 
         D i=new E();
         i.i2();
+        ((E) i).i3();
     }
 }

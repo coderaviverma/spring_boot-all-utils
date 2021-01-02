@@ -20,12 +20,9 @@ public class Java8Main {
                 .collect(Collectors.toList());
 
 
-
-
         for (Employee e :
                 employeeList) {
             System.out.println(e);
-
         }
 
     }

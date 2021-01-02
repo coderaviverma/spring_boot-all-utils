@@ -17,20 +17,16 @@ public class EvenThread extends Thread {
 
       synchronized (lock){
 
-
           while (integer.get()<20){
 
               if (integer.get()%2!=0){
                   try {
-                      lock.wait();
+                      lock .wait();
                   } catch (InterruptedException e) {
                       e.printStackTrace();
                   }
-
               }else {
-
                   System.out.println("Even Number "+integer.get());
-
                   try {
                       Thread.sleep(1000);
                   } catch (InterruptedException e) {
@@ -38,13 +34,8 @@ public class EvenThread extends Thread {
                   }
                   integer.incrementAndGet();
                 lock.notifyAll();
-
               }
-
-
           }
-
       }
-
     }
 }

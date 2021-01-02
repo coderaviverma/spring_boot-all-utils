@@ -19,9 +19,6 @@ public class BFSofBST {
         binaryTree.printLevelOrderTraversal();
     }
 
-
-
-
 }
 class Node {
 

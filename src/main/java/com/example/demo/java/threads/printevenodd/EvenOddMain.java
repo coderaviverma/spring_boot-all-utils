@@ -9,7 +9,8 @@ public class EvenOddMain {
         AtomicInteger integer=new AtomicInteger(1);
         Object lock =new Object();
 
-        EvenThread thread=new EvenThread(integer,lock);
+//        EvenThread thread=new EvenThread(integer,lock);
+        Even thread=new Even(integer,lock);
 
         OddThread oddThread=new OddThread(integer,lock);
 

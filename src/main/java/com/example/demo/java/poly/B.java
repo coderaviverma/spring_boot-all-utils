@@ -1,9 +1,11 @@
 package com.example.demo.java.poly;
 
+import java.io.IOException;
+
 public class B extends A {
 
     @Override
-   public   void callme(){
+   public void callme() throws NullPointerException{
         System.out.println("B method");
     }
 
@@ -12,5 +14,9 @@ public class B extends A {
     }
 
     public static void main(String[] args) {
+    }
+
+    static void callme1()throws IOException {
+        System.out.println("B method");
     }
 }
